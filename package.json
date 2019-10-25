@@ -1,0 +1,21 @@
+{
+  "name": "Geolocation",
+  "version": "1.0.0",
+  "description": "Simple geolocation",
+  "author": "PR <pr@vp.pl>",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ./dist/server.js"
+  },
+  "dependencies": {
+    "body-parser": "latest",
+    "express": "^4.16.1",
+    "jsonwebtoken": "latest",
+    "reflect-metadata": "latest",
+    "request": "latest",
+    "typescript": "latest",
+    "@types/node": "latest",
+    "typeorm": "latest",
+    "pg": "latest"
+  }
+}
