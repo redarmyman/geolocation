@@ -6,7 +6,7 @@ docker-compose up -d --build
 ```
 then login to container:
 ```
-docker-compose exec tickets-api /bin/bash
+docker-compose exec geolocation-api /bin/bash
 ```
 and then run migrations to have schema and some initial data:
 ```

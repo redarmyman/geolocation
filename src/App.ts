@@ -32,7 +32,7 @@ app.post('/', checkToken, async (req, res) => {
   }
 
   request(`http://api.ipstack.com/${req.body.data}?access_key=${config.apiKey}`, (err, response, body) => {
-    if (err) { return res.status(400); }
+    if (err) { return res.status(503).json({}); }
 
     body = JSON.parse(body);
     GeolocationRepository.save({ request: req.body.data, ...body, location: undefined });
